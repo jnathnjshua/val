@@ -198,6 +198,10 @@
     const result = document.getElementById("result");
     const hint = document.getElementById("hint");
 
+    setTimeout(() => {
+      document.getElementById("hint").style.display = "block";
+    }, 8000);
+
     /* ---------- CONFETTI ---------- */
     const confettiCanvas = document.getElementById("confettiCanvas");
 
@@ -297,13 +301,10 @@
       resizeConfettiCanvas();
       fullScreenConfetti();
     });
-
-    setTimeout(() => {
-      document.getElementById("hint").style.display = "block";
-    }, 8000);
   </script>
 </body>
 </html>
+
 
 
 
