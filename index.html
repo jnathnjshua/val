@@ -99,7 +99,9 @@
       color: #111827;
     }
 
+    /* Hide the hint by default so the timeout shows it after 8s */
     .hint {
+      display: none;
       margin-top: 10px;
       font-size: 13px;
       opacity: .7;
@@ -198,8 +200,12 @@
     const result = document.getElementById("result");
     const hint = document.getElementById("hint");
 
+    // Show the hint after 8 seconds. Use the cached `hint` variable and ensure it exists.
     setTimeout(() => {
-      document.getElementById("hint").style.display = "block";
+      if (hint) {
+        hint.style.display = "block";
+        console.log('hint shown');
+      }
     }, 8000);
 
     /* ---------- CONFETTI ---------- */
@@ -304,11 +310,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
