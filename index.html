@@ -103,12 +103,6 @@
       margin-top: 10px;
       font-size: 13px;
       opacity: .7;
-      text-decoration: none;
-      color: transparent;
-    }
-
-    .hint:hover {
-      color: black;
     }
 
     .result {
@@ -185,14 +179,14 @@
     </section>
 
     <!-- HINT -->
-    <div class="hint" id="hint">“No” have I rage baited you yet? 😈</div>
+    <div class="hint" id="hint"> have I rage baited you yet? 😈</div>
 
     <section class="result" id="result">
       <h2>YAY! 🎉</h2>
       <img
-        class="fireworks"
-        src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
-        alt="Fireworks"
+        class="bed flowers"
+        src="https://i.pinimg.com/originals/5b/2a/0d/5b2a0dd2c61658a0de0d391489665f4c.gif"
+        alt="Bed Flowers"
       />
     </section>
   </main>
@@ -303,9 +297,14 @@
       resizeConfettiCanvas();
       fullScreenConfetti();
     });
+
+    setTimeout(() => {
+      document.getElementById("hint").style.display = "block";
+    }, 8000);
   </script>
 </body>
 </html>
+
 
 
 
